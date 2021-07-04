@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": [
+        "missingNumber",
+        "linkedlist",
+        "duplicateArray",
+        "binarytree",
+        "binarysearch",
+        "arrayTwice",
+        "ValidParenthesis",
+        "Sorting",
+        "RomantoInt",
+        "HackerEarth",
+        "FreqStack",
+        "FibonacciSeries",
+        "BitOpertaors",
+        "LongestSubString"
+    ]
+}
