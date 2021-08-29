@@ -1,6 +1,5 @@
-import java.util.Arrays;
+
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class LongestSubstring {
@@ -16,29 +15,19 @@ public static void main(String[] args) {
     System.out.println(lengthOfLongestSubstring("dvdf"));
 }
     public static int lengthOfLongestSubstring(String s) {
-        //abcabcbb
-        Set<Character> setOfChar = new LinkedHashSet<Character>();
-        String currentLargest = "";
-        for(char c: s.toCharArray()){
-            if(!setOfChar.contains(c)){
-                setOfChar.add(c);
-            }else{
-                String temp =getStringFromSet(setOfChar);
-                currentLargest = currentLargest.length() > temp.length() ? currentLargest : temp;
-                setOfChar.remove(c);
-                setOfChar.add(c);
-            }
-        }
-        String temp =getStringFromSet(setOfChar);
-        currentLargest = currentLargest.length() > temp.length() ? currentLargest : temp;
-        return currentLargest.length();
-    }
+        Set<Character> seen = new HashSet<Character>();
+        int i=0, max=0;
 
-    public static String getStringFromSet(Set<Character> setofChars){
-        StringBuilder sb= new StringBuilder();
-        for(char c: setofChars){
-            sb.append(c);
+        for(int j =0; j < s.length(); j++){
+            char c = s.charAt(j);
+
+            while(seen.contains(c)){
+                seen.remove(s.charAt(i++));
+            }
+            seen.add(c);
+
+            max = Math.max(max, j - i +1);
         }
-        return sb.toString();
+        return max;
     }
 }

@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "removeDuplicateFromSortedArr",
         "missingNumber",
         "linkedlist",
         "duplicateArray",
@@ -9,10 +10,11 @@
         "ValidParenthesis",
         "Sorting",
         "RomantoInt",
+        "LongestSubString",
         "HackerEarth",
         "FreqStack",
         "FibonacciSeries",
         "BitOpertaors",
-        "LongestSubString"
+        "RemoveElement"
     ]
 }
