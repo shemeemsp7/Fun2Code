@@ -10,11 +10,12 @@
         "ValidParenthesis",
         "Sorting",
         "RomantoInt",
+        "RemoveElement",
         "LongestSubString",
         "HackerEarth",
         "FreqStack",
         "FibonacciSeries",
         "BitOpertaors",
-        "RemoveElement"
+        "HayStackNeedle"
     ]
 }
