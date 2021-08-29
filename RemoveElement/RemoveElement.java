@@ -4,12 +4,7 @@ public class RemoveElement {
     
     public static void main(String[] args) {
 
-        //int[] nums = { 0,1,2,2,3,0,4,2};
-        //0,1,2
-        //2
-
-        int[] nums = { 0};
-        //0,1,4,0,3
+        int[] nums = { 0,1,2,2,3,0,4,2};
         int result = removeElement(nums, 2);
         System.out.println(result);
         System.out.println(Arrays.toString(nums));
